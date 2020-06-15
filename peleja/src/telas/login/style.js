@@ -19,20 +19,28 @@ export const FormStyle = styled(Form)`
 `;
 
 export const BadgeCadastro = styled(Badge)`
-text-align: right;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
 width: 200px;
 border:1px solid #25692A;
 border-radius:4px;
-
 cursor:pointer;
-margin-left: auto
+margin-left: auto;
 font-family:Verdana;
 font-weight:bold;
 font-size:13px;
 padding:6px 10px;
 text-decoration:none;
-
+color: "info";
         
+`;
+
+export const ButtonLogin = styled.div`
+display: flex;
+justify-content: space-around;
+
 `;
 
 

@@ -7,15 +7,15 @@ import {Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootst
 function principal() {
   return (
     <Navbar bg="light" expand="lg">
-    <Navbar.Brand href="${Home}">PELEJA</Navbar.Brand>
+    <Navbar.Brand href="/">PELEJA</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link href="../telas/cadastro/cadastro">Login</Nav.Link>
-        <Nav.Link href="../telas/cadastro/cadastro">Cadastre-se</Nav.Link>
+        <Nav.Link href="/login">Login</Nav.Link>
+        <Nav.Link href="/projeto-peleja/pessoa/cadastro">Cadastre-se</Nav.Link>
         
         <NavDropdown title="Serviços" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Ocorrencias</NavDropdown.Item>
+          <NavDropdown.Item href="/projeto-peleja/registro/ocorrencia">Nova Ocorrencia</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Denunciar</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Casos resolvidos</NavDropdown.Item>
           <NavDropdown.Divider />

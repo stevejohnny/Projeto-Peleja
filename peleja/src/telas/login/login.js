@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Badge, FormGroup, Label, Input, Button, Col, Row } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import '../../App.css';
-import {Container, FormStyle, BadgeCadastro} from './style';
+import {Container, FormStyle, BadgeCadastro, ButtonLogin} from './style';
 //import CadastroUsuario from '../cadastro/cadastro'
 
 
@@ -50,11 +50,13 @@ function Login() {
                 </FormGroup>
               </Col>
             </Row>
+            <ButtonLogin>
             <Button 
              onClick={() => {
               conexaoBackEnd().then(resultado => localStorage.setItem('ConexaoBackEnd', JSON.stringify(resultado))) }}>Enviar
-            </Button>
-            <BadgeCadastro href="#" >Cadastre-se</BadgeCadastro>                             
+            </Button>          
+            <BadgeCadastro href="/projeto-peleja/pessoa/cadastro" >Cadastre-se</BadgeCadastro>          
+            </ButtonLogin>                             
           </FormStyle>
         </div>       
       </Container>  
